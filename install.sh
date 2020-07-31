@@ -16,7 +16,8 @@ decoration() {
 
 addrepo() {
 	# Add repo in separate file
-	mkdir -p $PREFIX/etc/apt/sources.list.d && printf "deb https://sillytuktuk2020.github.io/NoobTermux/ noobtermux main" > $PREFIX/etc/apt/sources.list.d/noobtermux.list
+	
+	mkdir -p $PREFIX/etc/apt/sources.list.d && printf "deb https://hax4us.github.io/TermuxBlack/ termuxblack main up" > $PREFIX/etc/apt/sources.list.d/termuxblack.list
 
 	# Add gpg public key
 	wget -q https://sillytuktuk2020.github.io/NoobTermux/noobtermux.key -O noobtermux.key && apt-key add noobtermux.key
